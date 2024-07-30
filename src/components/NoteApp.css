@@ -1,0 +1,54 @@
+.note-app {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* background-color: red; */
+    /* align-items: center;
+    width: 100%; */
+  }
+  
+  .note-input {
+    margin-bottom: 20px;
+  }
+  
+  .note-input input,
+  .note-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .note-input button {
+    padding: 10px 20px;
+  }
+  
+  .notes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .note {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    background: #000e0d;
+  }
+  
+  .note h4 {
+    margin-top: 0;
+  }
+  
+  .note button {
+    margin-right: 10px;
+  }
+
+  .text {
+    color: #ece1e1;
+  }
+  
+  @media (max-width: 600px) {
+    .notes-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
