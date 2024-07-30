@@ -10,6 +10,11 @@ const NoteApp = () => {
   const dispatch = useDispatch();
 
   const handleAddNote = () => {
+    if (title === '' || content === '') {
+      alert('Please enter title and content');
+      return;
+    }
+
     const newNote = {
       id: Date.now(),
       title,
@@ -24,6 +29,7 @@ const NoteApp = () => {
   return (
     <div className='note-app'>
       <div className='note-input'>
+        <h1>Notes App</h1>
         <input
           type='text'
           placeholder='Title'
